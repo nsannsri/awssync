@@ -29,13 +29,13 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
-          aws-region: us-east-1
+          aws-region: ap-south-1
 
       - name: Sync up to CodeCommit
         uses: nsannsri/awssync@v1
         with:
           repository_name: test_repo
-          aws_region: us-east-1
+          aws_region: ap-south-1
 ```
 
 ## Inputs
